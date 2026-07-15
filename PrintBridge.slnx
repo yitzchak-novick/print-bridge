@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="EmailFetcherService/EmailFetcherService.csproj" />
+  <Project Path="PrintBridge.Common/PrintBridge.Common.csproj" />
+  <Project Path="PrintWatchService/PrintWatcherService.csproj" />
+</Solution>
