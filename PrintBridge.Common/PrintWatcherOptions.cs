@@ -9,6 +9,17 @@ public class PrintWatcherOptions
     public const string SectionName = "PrintWatcher";
 
     public int PollIntervalSeconds { get; set; } = 30;
+
+    /// <summary>
+    /// After this many consecutive scan failures, back off to a longer
+    /// interval instead of retrying every PollIntervalSeconds.
+    /// </summary>
+    public int MaxConsecutiveFailuresBeforeBackoff { get; set; } = 5;
+
+    /// <summary>
+    /// How long to wait between checks once in backoff mode.
+    /// </summary>
+    public int BackoffIntervalSeconds { get; set; } = 600;
 }
 
 /// <summary>
